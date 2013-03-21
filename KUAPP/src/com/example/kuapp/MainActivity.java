@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
 	private static final int MENU_SETTINGS = 0;
 	public static Context appContext;
 
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -9,12 +9,12 @@ package com.example.kuapp;
 
 public final class R {
     public static final class array {
-        public static final int backgroundList=0x7f050000;
-        public static final int backgroundValues=0x7f050001;
-        public static final int country_array=0x7f050005;
-        public static final int planets_array=0x7f050004;
-        public static final int textList=0x7f050002;
-        public static final int textValues=0x7f050003;
+        public static final int backgroundList=0x7f040000;
+        public static final int backgroundValues=0x7f040001;
+        public static final int country_array=0x7f040005;
+        public static final int planets_array=0x7f040004;
+        public static final int textList=0x7f040002;
+        public static final int textValues=0x7f040003;
     }
     public static final class attr {
     }
@@ -61,6 +61,7 @@ public final class R {
         public static final int kursusfragment=0x7f030001;
         public static final int preference=0x7f030002;
         public static final int skemafragment=0x7f030003;
+        public static final int spinner_item=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f070000;
@@ -96,18 +97,23 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f040005;
+        public static final int AppBaseTheme=0x7f05000a;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f040006;
-        public static final int BLACK=0x7f040000;
-        public static final int BLUE=0x7f040004;
-        public static final int GREEN=0x7f040003;
-        public static final int RED=0x7f040002;
-        public static final int SpinnerItem=0x7f040008;
-        public static final int SpinnerItem_DropDownItem=0x7f040009;
-        public static final int Theme_NoTitleBar_WithColoredSpinners=0x7f040007;
-        public static final int WHITE=0x7f040001;
+        public static final int AppTheme=0x7f05000b;
+        public static final int SpinnerItem=0x7f05000d;
+        public static final int SpinnerItem_DropDownItem=0x7f05000e;
+        public static final int Theme_NoTitleBar_WithColoredSpinners=0x7f05000c;
+        public static final int back_BLACK=0x7f050000;
+        public static final int back_BLUE=0x7f050004;
+        public static final int back_GREEN=0x7f050003;
+        public static final int back_RED=0x7f050002;
+        public static final int back_WHITE=0x7f050001;
+        public static final int text_BLACK=0x7f050005;
+        public static final int text_BLUE=0x7f050009;
+        public static final int text_GREEN=0x7f050008;
+        public static final int text_RED=0x7f050007;
+        public static final int text_WHITE=0x7f050006;
     }
 }
