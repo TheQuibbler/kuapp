@@ -9,12 +9,12 @@ package com.example.kuapp;
 
 public final class R {
     public static final class array {
-        public static final int backgroundList=0x7f040000;
-        public static final int backgroundValues=0x7f040001;
+        public static final int background_list=0x7f040000;
+        public static final int background_values=0x7f040001;
         public static final int country_array=0x7f040005;
         public static final int planets_array=0x7f040004;
-        public static final int textList=0x7f040002;
-        public static final int textValues=0x7f040003;
+        public static final int text_list=0x7f040002;
+        public static final int text_values=0x7f040003;
     }
     public static final class attr {
     }
@@ -32,29 +32,30 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int DAGid=0x7f080006;
-        public static final int SKEMA=0x7f080007;
         public static final int country_spinner=0x7f080004;
+        public static final int course_field_01=0x7f08000d;
+        public static final int course_field_02=0x7f080010;
+        public static final int course_field_03=0x7f080013;
+        public static final int course_field_04=0x7f080016;
+        public static final int courses_id=0x7f08000a;
+        public static final int day_id=0x7f080007;
         public static final int edit_message=0x7f080005;
         public static final int fragment_container=0x7f080000;
-        public static final int kursusEt=0x7f08000c;
-        public static final int kursusFire=0x7f080015;
-        public static final int kursusTo=0x7f08000f;
-        public static final int kursusTre=0x7f080012;
-        public static final int overskriftKursus=0x7f080009;
-        public static final int overskriftSted=0x7f08000a;
-        public static final int overskriftTid=0x7f080008;
+        public static final int place_field_01=0x7f08000e;
+        public static final int place_field_02=0x7f080011;
+        public static final int place_field_03=0x7f080014;
+        public static final int place_field_04=0x7f080017;
+        public static final int place_id=0x7f08000b;
         public static final int planets_spinner=0x7f080002;
-        public static final int stedEt=0x7f08000d;
-        public static final int stedFire=0x7f080016;
-        public static final int stedTo=0x7f080010;
-        public static final int stedTre=0x7f080013;
+        public static final int scheme_id=0x7f080008;
+        public static final int search_button=0x7f080006;
         public static final int textView1=0x7f080001;
         public static final int textView2=0x7f080003;
-        public static final int tidEt=0x7f08000b;
-        public static final int tidFire=0x7f080014;
-        public static final int tidTo=0x7f08000e;
-        public static final int tidTre=0x7f080011;
+        public static final int time_field_01=0x7f08000c;
+        public static final int time_field_02=0x7f08000f;
+        public static final int time_field_03=0x7f080012;
+        public static final int time_field_04=0x7f080015;
+        public static final int time_id=0x7f080009;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -65,15 +66,20 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f070000;
-        public static final int background=0x7f070005;
-        public static final int background_info=0x7f070006;
-        public static final int color=0x7f070004;
-        public static final int language=0x7f070009;
+        public static final int background=0x7f07000a;
+        public static final int background_info=0x7f07000b;
+        public static final int color=0x7f070009;
+        public static final int courses=0x7f070005;
+        public static final int faculty=0x7f070004;
+        public static final int language=0x7f07000e;
+        public static final int place=0x7f070008;
         public static final int preference=0x7f070002;
+        public static final int search=0x7f070006;
         public static final int setPreference=0x7f070003;
         public static final int settings=0x7f070001;
-        public static final int text=0x7f070007;
-        public static final int text_info=0x7f070008;
+        public static final int text=0x7f07000c;
+        public static final int text_info=0x7f07000d;
+        public static final int time=0x7f070007;
     }
     public static final class style {
         /** 

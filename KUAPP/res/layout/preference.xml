@@ -9,16 +9,16 @@
             android:title="@string/background"
             android:summary="@string/background_info"
             android:defaultValue="0"
-            android:entries="@array/backgroundList"
-            android:entryValues="@array/backgroundValues">
+            android:entries="@array/background_list"
+            android:entryValues="@array/background_values">
         </ListPreference>
         <ListPreference
             android:key="text_color"
             android:title="@string/text"
             android:summary="@string/text_info"
             android:defaultValue="1"
-            android:entries="@array/textList"
-            android:entryValues="@array/textValues">
+            android:entries="@array/text_list"
+            android:entryValues="@array/text_values">
         </ListPreference>
             
 

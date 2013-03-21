@@ -4,8 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     <TextView 
-        android:name="DAG"
-        android:id="@+id/DAGid"
+        android:name="day"
+        android:id="@+id/day_id"
         android:text="Fredag d. 22. Januar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,7 +13,7 @@
         android:padding="15dp"/>
 
 <TableLayout 
-         android:id = "@+id/SKEMA"
+         android:id = "@+id/scheme_id"
          android:layout_height="0dp"
          android:layout_width="wrap_content"
          android:layout_weight="1"
@@ -21,24 +21,24 @@
 
      <TableRow android:layout_height="wrap_content">
          <TextView
-             android:id="@+id/overskriftTid"
-             android:text="Tid"
+             android:id="@+id/time_id"
+             android:text="@string/time"
              android:layout_height="wrap_content"
              android:textSize="30sp"
              android:layout_width="47dp"
              android:layout_marginBottom="15dp"
              />
          <TextView
-             android:id="@+id/overskriftKursus"
-             android:text="Kursus"
+             android:id="@+id/courses_id"
+             android:text="Kurser"
              android:layout_height="wrap_content"
              android:textSize="30sp"
              android:layout_width="130dp"
              android:layout_marginLeft="25dp"
              />
          <TextView
-             android:id="@+id/overskriftSted"
-             android:text="Sted"
+             android:id="@+id/place_id"
+             android:text="@string/place"
              android:layout_height="wrap_content"
              android:textSize="30sp"
              android:layout_width="100dp"
@@ -48,21 +48,21 @@
 
      <TableRow android:layout_height="wrap_content">
          <TextView
-             android:id="@+id/tidEt"
+             android:id="@+id/time_field_01"
              android:text="08:00-10:00"
              android:layout_height="wrap_content"
              android:layout_width="47dp"
              android:layout_marginBottom="15dp"
              />
          <TextView
-             android:id="@+id/kursusEt"
+             android:id="@+id/course_field_01"
              android:text=""
              android:layout_height="wrap_content"
              android:layout_width="130dp"
              android:layout_marginLeft="25dp"
              />
          <TextView
-             android:id="@+id/stedEt"
+             android:id="@+id/place_field_01"
              android:text=""
              android:layout_height="wrap_content"
              android:layout_width="100dp"
@@ -72,21 +72,21 @@
 
      <TableRow android:layout_height="wrap_content">
          <TextView
-             android:id="@+id/tidTo"
+             android:id="@+id/time_field_02"
              android:text="10:00-12:00"
              android:layout_height="wrap_content"
              android:layout_width="47dp"
              android:layout_marginBottom="15dp"
              />
          <TextView
-             android:id="@+id/kursusTo"
+             android:id="@+id/course_field_02"
              android:text="Databaser og Webprogrammering (DBW)"
              android:layout_height="wrap_content"
              android:layout_width="130dp"
              android:layout_marginLeft="25dp"
              />
          <TextView
-             android:id="@+id/stedTo"
+             android:id="@+id/place_field_02"
              android:text="HCØ aud. 2"
              android:layout_height="wrap_content"
              android:layout_width="100dp"
@@ -96,21 +96,21 @@
      
      <TableRow android:layout_height="wrap_content">
          <TextView
-             android:id="@+id/tidTre"
+             android:id="@+id/time_field_03"
              android:text="13:00-15:00"
              android:layout_height="wrap_content"
              android:layout_width="47dp"
              android:layout_marginBottom="15dp"
              />
          <TextView
-             android:id="@+id/kursusTre"
+             android:id="@+id/course_field_03"
              android:text=""
              android:layout_height="wrap_content"
              android:layout_width="130dp"
              android:layout_marginLeft="25dp"
              />
          <TextView
-             android:id="@+id/stedTre"
+             android:id="@+id/place_field_03"
              android:text=""
              android:layout_height="wrap_content"
              android:layout_width="100dp"
@@ -120,20 +120,20 @@
      
      <TableRow android:layout_height="wrap_content">
          <TextView
-             android:id="@+id/tidFire"
+             android:id="@+id/time_field_04"
              android:text="15:00-17:00"
              android:layout_height="wrap_content"
              android:layout_width="47dp"
              />
          <TextView
-             android:id="@+id/kursusFire"
+             android:id="@+id/course_field_04"
              android:text=""
              android:layout_height="wrap_content"
              android:layout_width="130dp"
              android:layout_marginLeft="25dp"
              />
          <TextView
-             android:id="@+id/stedFire"
+             android:id="@+id/place_field_04"
              android:text=""
              android:layout_height="wrap_content"
              android:layout_width="100dp"
