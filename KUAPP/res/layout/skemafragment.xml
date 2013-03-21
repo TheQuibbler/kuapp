@@ -6,7 +6,7 @@
     <TextView 
         android:name="DAG"
         android:id="@+id/DAGid"
-        android:text="Fredag d. 22. marts"
+        android:text="Fredag d. 22. Januar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="35sp"
