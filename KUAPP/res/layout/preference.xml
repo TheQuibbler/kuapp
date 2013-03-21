@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="first_category"
+        android:title="@string/color">
+        <ListPreference
+            android:key="background_color"
+            android:title="@string/background"
+            android:summary="@string/background_info"
+            android:defaultValue="0"
+            android:entries="@array/backgroundList"
+            android:entryValues="@array/backgroundValues">
+        </ListPreference>
+        <ListPreference
+            android:key="text_color"
+            android:title="@string/text"
+            android:summary="@string/text_info"
+            android:defaultValue="1"
+            android:entries="@array/textList"
+            android:entryValues="@array/textValues">
+        </ListPreference>
+            
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

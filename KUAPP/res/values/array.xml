@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="backgroundList">
+        <item>Black</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+    <string-array name="backgroundValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="textList">
+        <item>Black</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+    <string-array name="textValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Mikaels planet</item>
+        <item>Caspers planet</item>
+        <item>Anders planet</item>
+        <item>HCs planet</item>
+    </string-array>
+    <string-array name="country_array">
+        <item>Danmark</item>
+        <item>Sverige</item>
+        <item>Norge</item>
+        <item>England</item>
+        <item>Frankrig</item>
+        <item>Spanien</item>
+        <item>USA</item>
+        <item>New Zealand</item>
+        <item>Azerbaijan</item>
+        <item>Kina</item>
+        <item>Københavns Universitet</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KUAPP</string>
+    <string name="settings">Settings</string>
+    <string name="preference">Preference</string>
+    <string name="setPreference">SetPreference</string>
+    
+    <string name="color">Colors</string>
+		<string name="background">Background Color</string>
+    	<string name="background_info">Here you may choose which color you want for the background, throughout the application</string>
+    
+    	<string name="text">Text Color</string>
+    	<string name="text_info">Here you may choose which color you want for the text throughout the appliaction</string>
+
+    <string name="language">Language</string>
+    
+
+</resources>
