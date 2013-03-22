@@ -18,7 +18,19 @@
     	<string name="text">Text Color</string>
     	<string name="text_info">Here you may choose which color you want for the text throughout the appliaction</string>
 
+    	<string name="black">Black</string>
+    	<string name="white">White</string>
+    	<string name="red">Red</string>
+    	<string name="green">Green</string>
+    	<string name="blue">Blue</string>
+    	
     <string name="language">Language</string>
+    	<string name="language_info">Here you may choose a language to use throughout the application</string>
+    
+    	<string name="english">English</string>
+    	<string name="danish">Danish</string>
+    
+    	
     
 
 </resources>

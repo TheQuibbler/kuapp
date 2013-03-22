@@ -127,14 +127,14 @@
              />
          <TextView
              android:id="@+id/course_field_04"
-             android:text=""
+             android:text="Projektkursus: Systemudvikling. Øvelses time"
              android:layout_height="wrap_content"
              android:layout_width="130dp"
              android:layout_marginLeft="25dp"
              />
          <TextView
              android:id="@+id/place_field_04"
-             android:text=""
+             android:text="DIKU-10-0-26"
              android:layout_height="wrap_content"
              android:layout_width="100dp"
              android:layout_marginLeft="25dp"

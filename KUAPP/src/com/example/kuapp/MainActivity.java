@@ -24,8 +24,8 @@ public class MainActivity extends Activity {
         ActionBar actionbar = getActionBar();
         actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         
-        Tab SkemaTab = actionbar.newTab().setText("Skema");
-        ActionBar.Tab KursusTab = actionbar.newTab().setText("Kursus");
+        Tab SkemaTab = actionbar.newTab().setText("Scheme");
+        ActionBar.Tab KursusTab = actionbar.newTab().setText("Course");
         
         Fragment SkemaFrag = new SkemaFragment();
         Fragment KursusFrag = new KursusFragment();

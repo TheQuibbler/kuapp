@@ -20,9 +20,18 @@
             android:entries="@array/text_list"
             android:entryValues="@array/text_values">
         </ListPreference>
-            
-
-
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="second_category"
+        android:title="@string/language">
+        <ListPreference
+            android:key="language"
+            android:title="@string/language"
+            android:summary="@string/language_info"
+            android:defaultValue="0"
+            android:entries="@array/language_list"
+            android:entryValues="@array/language_values">
+        </ListPreference>
     </PreferenceCategory>
 
 </PreferenceScreen>
