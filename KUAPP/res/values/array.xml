@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="backgroundList">
+    <string-array name="language_list">
+        <item>English</item>
+        <item>Danish</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="background_list">
         <item>Black</item>
         <item>White</item>
         <item>Red</item>
         <item>Green</item>
         <item>Blue</item>
     </string-array>
-    <string-array name="backgroundValues">
+    <string-array name="background_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
     </string-array>
-    <string-array name="textList">
+    <string-array name="text_list">
         <item>Black</item>
         <item>White</item>
         <item>Red</item>
         <item>Green</item>
         <item>Blue</item>
     </string-array>
-    <string-array name="textValues">
+    <string-array name="text_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>

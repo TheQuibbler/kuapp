@@ -4,7 +4,6 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-import android.widget.Toast;
 
 public class MyTabsListener implements ActionBar.TabListener {
 	public Fragment fragment;
@@ -15,7 +14,7 @@ public class MyTabsListener implements ActionBar.TabListener {
 
 	@Override
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
-		Toast.makeText(MainActivity.appContext, "Reselected!", Toast.LENGTH_LONG).show();
+		//do nothing
 	}
 
 	@Override
