@@ -7,6 +7,6 @@
     android:gravity="left"  
     android:textSize="20sp"
     android:textColor="#000000"         
-    android:padding="5dip" >
+    android:padding="5dip">
     
 </TextView>
