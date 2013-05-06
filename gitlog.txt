@@ -1,0 +1,85 @@
+$ git log
+commit c995ef9654bbde0227512d21188fb7046df62095
+Merge: 3fda2f5 c0cc010
+Author: Dr-Ibberdibber <chikcen@gmail.com>
+Date:   Thu Apr 25 03:18:09 2013 -0700
+
+    Merge pull request #4 from WolfsonDK/master
+
+    connection php file
+
+commit c0cc0106a221d828acebb649eeef5d337126c9cb
+Author: Mikael Wolfson Larsen <mikael_wolfson@hotmail.com>
+Date:   Thu Apr 25 12:14:30 2013 +0200
+
+    connection php fil
+
+    connects to the database
+
+commit 3fda2f5efddbb4f13b3561b9ba16ca635467426a
+Merge: b47540c 9b8687c
+Author: Dr-Ibberdibber <chikcen@gmail.com>
+Date:   Mon Apr 8 01:55:48 2013 -0700
+
+    Merge pull request #3 from Dr-Ibberdibber/Work-Branch
+
+    Work branch
+
+commit 9b8687c2ad73fb0d7471fd36f23f134134e8bcad
+Author: Anders Ibsen <chikcen@gmail.com>
+Date:   Fri Mar 22 11:19:52 2013 +0100
+
+    Added dummy list in Preference, for changing language
+
+commit d955889fbea613692b08171df8be9c194be8986c
+Author: Anders Ibsen <chikcen@gmail.com>
+Date:   Fri Mar 22 00:39:41 2013 +0100
+
+    Fixed a crash, by removing Toast from TabListener
+
+    Also changed all ID's to english, as well as several hardcoded strings.
+    Discuss which language to use tomorrow with HC
+
+commit cc3c269fb87be85a5a41f8441c520bd32978439d
+Author: Anders Ibsen <chikcen@gmail.com>
+Date:   Thu Mar 21 23:58:21 2013 +0100
+
+    Changed the color of the spinner drop down text
+
+    This change include a new file spinner_item.xml, to handle to font of
+    the spinners instead of using the standard android.R.layout.
+    This also made the lines adding layout to the drop downs in
+    KursusFragment.java moot, and I removed these.
+
+commit b47540cff9d3c2d8c83d677dc43f44510833bd32
+Merge: 766e7a4 aa20639
+Author: Dr-Ibberdibber <chikcen@gmail.com>
+Date:   Thu Mar 21 10:03:23 2013 -0700
+
+    Merge pull request #2 from Dr-Ibberdibber/Work-Branch
+
+    First Master Merge
+
+commit aa20639290da7665612d0986229ef1e2c3d233a8
+Merge: 766e7a4 1a77425
+Author: Dr-Ibberdibber <chikcen@gmail.com>
+Date:   Thu Mar 21 09:59:56 2013 -0700
+
+    Merge pull request #1 from WolfsonDK/master
+
+    datoændring skemfrag
+
+commit 1a774258e705b7e42d6f0403195290cd5745c939
+Author: Mikael Wolfson Larsen <mikael_wolfson@hotmail.com>
+Date:   Thu Mar 21 17:52:29 2013 +0100
+
+    Ændret dato fra marts til januar
+
+commit 766e7a4c6b17c2363e02ab9f81550a0f64b71ae7
+Author: Anders Ibsen <chikcen@gmail.com>
+Date:   Thu Mar 21 17:13:52 2013 +0100
+
+    First edition
+
+    lol, so many cats in my computer
+(END)
