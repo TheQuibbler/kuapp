@@ -23,58 +23,59 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class KursusFragment extends Fragment implements OnItemSelectedListener {
-	
-	private String query;
-	private ArrayList<String> faculty = new ArrayList<String>();
-	private String chosenFaculty;
-	private ArrayList<String> courses = new ArrayList<String>(); 
+public class KursusFragment extends Fragment {
+
+	public ArrayList<String> faculty, courses;
 	private JSONArray json;
+	
+	private String chosenFaculty, chosenCourse;
+	
+	Spinner spinner1, spinner2;
+	ArrayAdapter<String> adapter1, adapter2;
 	
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     	// Inflate the layout for this fragment
-        this.facultyToArray();
         View v = inflater.inflate(R.layout.kursusfragment, container, false);
+        faculty = new ArrayList<String>();
+        courses = new ArrayList<String>();
+        faculty.add("Pick a faculty");
+        courses.add("Pick a course");
         
-        Spinner spinner = (Spinner) v.findViewById(R.id.planets_spinner);
-    	// Create an ArrayAdapter using the string array and a default spinner layout
-    	ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.spinner_item, faculty);
-    	// Apply the adapter to the spinner
-    	adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-    	spinner.setAdapter(adapter);
-    	spinner.setOnItemSelectedListener(this);
+        // Create spinner and adapter 1
+        spinner1 = (Spinner) v.findViewById(R.id.planets_spinner);
+    	adapter1 = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.spinner_item, faculty);
     	
-    	Spinner spinner2 = (Spinner) v.findViewById(R.id.country_spinner);
-    	// Create an ArrayAdapter using the string array and a default spinner layout
-    	ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity().getApplicationContext(),
-    	        R.layout.spinner_item, courses);
     	// Apply the adapter to the spinner
-    	adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    	adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    	spinner1.setAdapter(adapter1);
+    	spinner1.setOnItemSelectedListener(new myOnItemSelectedListenerOne());
+
+    	// Create spinner and adapter 2
+    	spinner2 = (Spinner) v.findViewById(R.id.country_spinner);
+    	adapter2 = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.spinner_item, courses);
+    	
+    	// Apply the adapter to the spinner
+    	adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
     	spinner2.setAdapter(adapter2);
-        
+    	
+    	// Create do in background task
+    	postData task = new postData();
+    	task.execute("SELECT faculty FROM FACULTY", "faculty");
+    	
     	return v;
     }
     
-	@Override
-	public void onItemSelected(AdapterView<?> parent, View view, int pos,
-			long id) {
-		chosenFaculty = parent.getItemAtPosition(pos).toString();
-		coursesToArray();
-		
-		
-		
-	}
     
-    private class postData extends AsyncTask<String, Void, String> {
+private class postData extends AsyncTask<String, Void, String> {
     	
     protected String doInBackground(String...strings) {
     	// Create a new HttpClient and Post Header
     	HttpClient httpClient = new DefaultHttpClient();
-    	HttpPost httpPost = new HttpPost("http://www.karlashop.dk/conn.php");
+    	HttpPost httpPost = new HttpPost("http://karlashop.dk/conn.php");
     	
     	// This is the data to send
-    	String localQuery = query;
+    	String localQuery = strings[0];
     	
     	try {
     		// Add data
@@ -90,32 +91,38 @@ public class KursusFragment extends Fragment implements OnItemSelectedListener {
     		   		
     		// Instantiate a JSON array
     		json = new JSONArray(queryResult);
+    		
     	} catch(Exception e) {
     		Log.e("info", Log.getStackTraceString(e));
     	}
-		return null;
-    }
+		return strings[1];
     }
     
+    protected void onPostExecute(String key) {
+    	if ( key.equals("faculty") ) {
+    		facultyToArray();
+    	}
+    	if ( key.equals("courses") ) {
+    		coursesToArray();
+    	}
+    }
+}
+    
     public void facultyToArray() {
-    	query = "SELECT faculty FROM FACULTY";
-    	postData task = new postData();
-    	task.execute("hey");
-    	
     	try {
     		for (int i = 0; i < json.length(); i++) {
     			String temp = json.getJSONObject(i).getString("faculty");
     			faculty.add(temp);
     		}
     	} catch(Exception e) {
-    		Log.e("info", Log.getStackTraceString(e));
+    		Log.e("info1", Log.getStackTraceString(e));
     	}
+    	adapter1.notifyDataSetChanged();
+    	
     }
     
     public void coursesToArray() {
-    	query = "SELECT courses FROM COURSES, FACULTY WHERE faculty = " + chosenFaculty + " AND id_faculty = id_courses";
-    	postData task = new postData();
-    	task.execute("hey");
+    	//query = "SELECT courses FROM COURSES, FACULTY WHERE faculty = " + chosenFaculty + " AND id_faculty = id_courses";
     	
     	try {
     		for (int i = 0; i < json.length(); i++) {
@@ -125,12 +132,23 @@ public class KursusFragment extends Fragment implements OnItemSelectedListener {
     	} catch(Exception e) {
     		Log.e("info", Log.getStackTraceString(e));
     	}
+
     	
     }
+    
+    public class myOnItemSelectedListenerOne implements OnItemSelectedListener {
 
-	@Override
-	public void onNothingSelected(AdapterView<?> arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+		@Override
+		public void onItemSelected(AdapterView<?> parent, View view, int pos,
+				long id) {
+			chosenFaculty = parent.getItemAtPosition(pos).toString();
+			
+		}
+
+		@Override
+		public void onNothingSelected(AdapterView<?> parent) {
+			// TODO Auto-generated method stub
+		}	
+    }
+
 }
